@@ -64,10 +64,11 @@ body {
 }
 /* styling the header */
 #header-image {
-	height: 83vh;
+	height: 70vh;
 }
 #header-text {
-	height: 80%;
+	height: 85%;
+	margin-left: 250px;
 }
 #header-text h1 {
 	font-size: 54px;
@@ -77,12 +78,10 @@ body {
 }
 
 #header-text h4 {
-	font-size: 38px;
-	line-height: 1.2em;
+	font-size: 34px;
 	color: #fbecd4;
 }
 a {
-	color: #4b958e;
 	text-decoration: none;
 }
 .navbar-nav .nav-link.active {
@@ -119,41 +118,46 @@ a {
 }
 .btn-shop-1 {
 	background-color: #4b958e;
-	color: white;
+	color: #fbecd4;
 }
-.btn-reports {
+.btn-shop-1:hover {
+	color: white;
+	background-color: #4b958e;
+}
+.btn-outline-success {
 	color: #4b958e;
 	background-color: #fbecd4;
 	border: 3px solid #4b958e;
-	border-radius: 3px;
 }
-.btn-reports:hover {
-	color: #4b958e;
-	background-color: #fbecd4;
-	box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+.btn-outline-success:hover {
+	color: #fbecd4;
+	background-color: #4b958e;
+	border: 3px solid #4b958e;
 }
+
 .modal-content {
 	border-radius: 10px;
 	background-color: #fbecd4;
 }
-
-.card-body {
-	--bs-card-spacer-y: 5px !important;
+.modal-content a {
+	color: #4b958e;
+	text-decoration: none;
 }
+
 /* Extra large devices (large desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
 	#header-image {
-		height: 60vh;
+		height: 65vh;
 	}
 	#header-text {
-		height: 60%;
+		height: 75%;
 	}
 	#header-text h1 {
 		font-size: 44px;
 	}
 
 	#header-text h4 {
-		font-size: 34px;
+		font-size: 28px;
 	}
 	.align-items-center-md {
 		align-items: center;
@@ -169,7 +173,7 @@ a {
 		padding-left: 3rem;
 		padding-right: 3rem;
 	}
-	.btn-reports {
+	.btn-outline-success {
 		padding-left: 3rem;
 		padding-right: 3rem;
 	}
@@ -184,7 +188,7 @@ a {
 		font-size: 30px;
 	}
 	#header-text {
-		height: 70%;
+		height: 80%;
 	}
 	#header-text h4 {
 		font-size: 22px;
@@ -203,13 +207,13 @@ a {
 		padding-right: 1rem;
 	}
 	.btn-shop-1 {
-		padding-left: 1rem;
-		padding-right: 1rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
 	}
 
-	.btn-reports {
-		padding-left: 1rem;
-		padding-right: 1rem;
+	.btn-outline-success {
+		padding-left: 2rem;
+		padding-right: 2rem;
 	}
 }
 
@@ -217,10 +221,11 @@ a {
 
 @media only screen and (max-width: 768px) {
 	#header-image {
-		height: 40vh;
+		height: 55vh;
 	}
 	#header-text {
-		height: 60%;
+		height: 89%;
+		margin: auto;
 	}
 	#header-text h1 {
 		font-size: 28px;
@@ -254,7 +259,7 @@ a {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-	.btn-reports {
+	.btn-outline-success {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
@@ -264,17 +269,20 @@ a {
 
 @media only screen and (max-width: 576px) {
 	#header-image {
-		height: 25vh;
+		background-image: url("<?php echo esc_url(get_template_directory_uri()); ?>assets/images/background_image_mobile.svg");
+
+		height: 40vh;
 	}
 	#header-text {
 		height: 60%;
+		margin: auto;
 	}
 	#header-text h1 {
-		font-size: 20px;
+		font-size: 32px;
 	}
 
 	#header-text h4 {
-		font-size: 14px;
+		font-size: 16px;
 	}
 
 	#akwanza-logo {
@@ -290,14 +298,7 @@ a {
 		padding-left: 2px;
 		border: none;
 	}
-	.btn-shop-1 {
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-	.btn-reports {
-		padding-left: 15px;
-		padding-right: 15px;
-	}
+
 	.vr {
 		display: none;
 	}
@@ -317,19 +318,22 @@ a {
 	}
 }
 @media (min-width: 300px) and (max-width: 575px) {
+	#header-image {
+		height: 60vh;
+	}
+	#header-text {
+		height: 80%;
+		margin: auto;
+	}
+
 	#header-text h1 {
-		font-size: 20px;
+		font-size: 28px;
 	}
 
 	#header-text h4 {
-		font-size: 12px;
+		font-size: 16px;
 	}
-	#header-text {
-		height: 70%;
-	}
-	#header-image {
-		height: 30vh;
-	}
+
 	#akwanza-logo {
 		font-size: 20px;
 	}
@@ -347,7 +351,7 @@ a {
 		padding-left: 25px;
 		padding-right: 25px;
 	}
-	.btn-reports {
+	.btn-outline-success {
 		padding-left: 25px;
 		padding-right: 25px;
 	}

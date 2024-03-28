@@ -5,7 +5,7 @@
                 <h1 class="card-title text-center p-3">Online Store</h1>
                 <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/Hoodie.png"
                     alt="Hoodie image" class="mx-auto" width="fit-content" height="300px" style="color: black;">
-                <div class="card-body text-center">
+                <div class="card-body text-center h-50">
                     <h4 class="card-title">Empowering Change through Commerce:</h4>
                     <p class="card-text">Every purchase you make contributes directly to supporting the vital
                         conservation
@@ -22,14 +22,14 @@
                 <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/reports.png"
                     alt="hand holding a smartphone" class="mx-auto" width="fit-content" height="300px"
                     style="color: black;">
-                <div class="card-body text-center">
+                <div class="card-body text-center h-50">
                     <h4 class="card-title">Visualizing Impact:</h4>
                     <p class="card-text">By transforming complex information into compelling visual narratives,
                         fostering a
                         deeper understanding of conservation challenges and opportunities.</p>
                 </div>
                 <div class="text-center mb-4">
-                    <a href="#" class="btn btn-lg btn-reports" data-bs-toggle="modal"
+                    <a href="#" class="btn btn-lg btn-outline-success" data-bs-toggle="modal"
                         data-bs-target="#staticBackdrop">Coming Soon</a>
                     <div class="modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
                         aria-hidden="true">
@@ -43,14 +43,17 @@
                                         id="btn-modal"></button>
                                 </div>
                                 <div class="modal-body text-start">
-                                    <h4>We are building:</h4>
+                                    <h6>We are building:</h6>
                                     <ul>
-                                        <li>A mosaic of images capturing <a
+                                        <li class="text-justify">A mosaic of images capturing <a
                                                 href="https://biglife.org/program-updates/operational-reports"
-                                                target="_blank">The Big Life Foundation</a>'s rangers in action,
+                                                target="_blank">The Big Life Foundation</a>'s rangers in
+                                            action,
                                             community
                                             smiles, and thriving wildlife.</li>
-                                        <li>Infographics with symbols representing animals saved, rangers employed, and
+                                        <li class="text-justify">Infographics with symbols representing
+                                            animals
+                                            saved, rangers employed, and
                                             acres
                                             conserved, to depict the tangible impact of your support.</li>
                                     </ul>

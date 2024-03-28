@@ -50,7 +50,7 @@
                     style=" background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/Header.svg');
                             background-size: cover;
                              background-repeat: no-repeat;
-                            background-position: center center;
+                            background-position:center;
                         ">
                     <div id="header-text">
                         <h1 style="font-family: 'Colonna MT', serif;">Uniting for Wildlife Conservation</h1>
