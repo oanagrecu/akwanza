@@ -28,10 +28,10 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
+/* body {
 	margin: 0;
 	padding: 0;
-}
+} */
 
 /* styling the navbar */
 .navbar {
@@ -63,10 +63,10 @@ body {
 }
 /* styling the header */
 #header-image {
-	height: 100vh;
+	height: 65vh;
 }
 #header-text {
-	height: 70%;
+	height: 80%;
 }
 #header-text h1 {
 	font-size: 54px;
@@ -87,6 +87,42 @@ a {
 }
 .justify-content-center-md {
 	justify-content: center;
+}
+/* styling section1 SERVICES*/
+.section1 {
+	background-color: #deb693;
+}
+#section1-content {
+	background-color: #deb693;
+}
+#services-card {
+	border-radius: 10px;
+	background-color: #fbecd4;
+}
+#services-card h1 {
+	font-size: 54px;
+	font-family: "Colonna MT", serif;
+	font-weight: bolder;
+	color: black;
+}
+#services-card h4 {
+	font-size: 32px;
+	color: black;
+}
+.btn-reports {
+	color: #4b958e;
+	background-color: #fbecd4;
+	border: 3px solid #4b958e;
+	border-radius: 3px;
+}
+.btn-reports:hover {
+	color: #4b958e;
+	background-color: #fbecd4;
+	box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+	border-radius: 10px;
+	background-color: #fbecd4;
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
@@ -110,6 +146,10 @@ a {
 		justify-content: center;
 	}
 	.btn-shop {
+		padding-left: 3.125rem;
+		padding-right: 3.125rem;
+	}
+	.btn-reports {
 		padding-left: 3.125rem;
 		padding-right: 3.125rem;
 	}

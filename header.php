@@ -48,7 +48,6 @@
                 <div id="header-image"
                     class="d-flex flex-column justify-content-center text-align-center container-fluid text-center bg-image text-white"
                     style=" background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/Header.svg');
-                    
                             background-size: cover;
                              background-repeat: no-repeat;
                             background-position: center center;
