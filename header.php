@@ -23,7 +23,7 @@
         <body>
             <header>
                 <nav class="navbar navbar-expand-sm justify-content-between px-4">
-                    <a class="navbar-brand" id="akwanza-logo" href="<?php echo esc_url(home_url('/Home')); ?>">
+                    <a class="navbar-brand" id="akwanza-logo" href="<?php echo esc_url(home_url('/')); ?>">
                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/akwanza_logo.png" alt="akwanza Logo" width="80" height="90" style="color: black;">AKWANZA
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-solid fa-bars"></i></button>
@@ -35,26 +35,33 @@
                                 </li>
                                 <span class="vr" style="height: 40px; width:2px; color:black;"></span>
                                 <li class="nav-item">
-                                    <a class="nav-link <?php echo is_page('About') ? 'active' : ''; ?>" href="<?php echo esc_url(get_permalink(get_page_by_path('/about'))); ?>">About</a>
+                                    <a class="nav-link <?php echo is_page('about') ? 'active' : ''; ?>" href="<?php echo esc_url(get_permalink(get_page_by_path('about'))); ?>">About</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="d-flex">
-                            <a href="https://akwanza.teemill.com" class="btn bt-lg btn-shop">
+                            <a href="https://akwanza.teemill.com" class="btomelg btn-shop">
                                 <span><i class="fas fa-tshirt mx-2"></i></span>Shop</a>
                         </div>
                     </div>
                 </nav>
-                <div id="header-image" class="d-flex flex-column justify-content-center text-align-center container-fluid text-center bg-image text-white" style=" background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/Header.svg');
-                    
-                            background-size: cover;
-                             background-repeat: no-repeat;
-                            background-position: center center;
-                        ">
-                    <div id="header-text">
-                        <h1 style="font-family: 'Colonna MT', serif;">Uniting for Wildlife Conservation</h1>
-                        <h4>Together, Every Purchase is a Pledge to Protect</h4>
-                    </div>
+                <div id="header-image" class="d-flex flex-column justify-content-center text-align-center container-fluid text-center bg-image text-white" style="background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/Header.svg'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+                    <?php
+                    // Check if the current URL slug includes '/about'
+                    if (strpos($_SERVER['REQUEST_URI'], '/about') !== false) {
+                        // If the URL contains '/about', display this header text
+                        echo '<div id="header-text">
+                            <h1 style="font-family: \'Colonna MT\', serif;">Once upon a time...</h1>
+                            <h2>after a trip up Mount Kilimanjaro</h2>
+                        </div>';
+                    } else {
+                        // Else, display the default header text
+                        echo '<div id="header-text">
+                            <h1 style="font-family: \'Colonna MT\', serif;">Uniting for Wildlife Conservation</h1>
+                            <h2>Together, Every Purchase is a Pledge to Protect</h2>
+                        </div>';
+                    }
+                    ?>
                 </div>
 
             </header>
