@@ -16,8 +16,8 @@
 
         </html>
         <?php include 'content-section1.php'; ?>
-
-
+        <?php include 'content-section2.php'; ?>
+       
         <?php
         if (have_posts()):
             while (have_posts()):
@@ -40,4 +40,4 @@
 
     </main><!-- #main -->
 </div><!-- #primary -->
-<!-- <?php include 'content-footer.php'; ?> -->
+<?php include 'content-footer.php'; ?>
