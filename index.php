@@ -14,12 +14,9 @@
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         </head>
 
-        <body>
-
-        </body>
-
         </html>
         <?php include 'content-section1.php'; ?>
+
 
         <?php
         if (have_posts()):

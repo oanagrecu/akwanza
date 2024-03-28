@@ -28,10 +28,10 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
+/* body {
 	margin: 0;
 	padding: 0;
-}
+} */
 
 /* styling the navbar */
 .navbar {
@@ -56,6 +56,7 @@ body {
 	background-color: #4b958e;
 	color: white;
 }
+
 .btn-shop:hover {
 	box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
 	background-color: #56aba2;
@@ -63,17 +64,22 @@ body {
 }
 /* styling the header */
 #header-image {
-	height: 100vh;
+	height: 70vh;
 }
 #header-text {
-	height: 70%;
+	height: 85%;
+	margin-left: 250px;
 }
 #header-text h1 {
 	font-size: 54px;
+	font-weight: 700;
+	line-height: 1.5em;
+	color: #fbecd4;
 }
 
 #header-text h4 {
-	font-size: 32px;
+	font-size: 34px;
+	color: #fbecd4;
 }
 a {
 	text-decoration: none;
@@ -88,20 +94,70 @@ a {
 .justify-content-center-md {
 	justify-content: center;
 }
+
+/* styling section1 SERVICES*/
+.section1 {
+	background-color: #deb693;
+}
+#section1-content {
+	background-color: #deb693;
+}
+#services-card {
+	border-radius: 10px;
+	background-color: #fbecd4;
+}
+#services-card h1 {
+	font-size: 54px;
+	font-family: "Colonna MT", serif;
+	font-weight: bolder;
+	color: black;
+}
+#services-card h4 {
+	font-size: 32px;
+	color: black;
+}
+.btn-shop-1 {
+	background-color: #4b958e;
+	color: #fbecd4;
+}
+.btn-shop-1:hover {
+	color: white;
+	background-color: #4b958e;
+}
+.btn-outline-success {
+	color: #4b958e;
+	background-color: #fbecd4;
+	border: 3px solid #4b958e;
+}
+.btn-outline-success:hover {
+	color: #fbecd4;
+	background-color: #4b958e;
+	border: 3px solid #4b958e;
+}
+
+.modal-content {
+	border-radius: 10px;
+	background-color: #fbecd4;
+}
+.modal-content a {
+	color: #4b958e;
+	text-decoration: none;
+}
+
 /* Extra large devices (large desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
 	#header-image {
-		height: 60vh;
+		height: 65vh;
 	}
 	#header-text {
-		height: 60%;
+		height: 75%;
 	}
 	#header-text h1 {
-		font-size: 34px;
+		font-size: 44px;
 	}
 
 	#header-text h4 {
-		font-size: 24px;
+		font-size: 28px;
 	}
 	.align-items-center-md {
 		align-items: center;
@@ -110,8 +166,16 @@ a {
 		justify-content: center;
 	}
 	.btn-shop {
-		padding-left: 3.125rem;
-		padding-right: 3.125rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+	.btn-shop-1 {
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+	.btn-outline-success {
+		padding-left: 3rem;
+		padding-right: 3rem;
 	}
 }
 
@@ -124,7 +188,7 @@ a {
 		font-size: 30px;
 	}
 	#header-text {
-		height: 70%;
+		height: 80%;
 	}
 	#header-text h4 {
 		font-size: 22px;
@@ -138,10 +202,18 @@ a {
 	.navbar {
 		width: 100%;
 	}
-
 	.btn-shop {
-		padding-left: 1.75rem;
-		padding-right: 1.75rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	.btn-shop-1 {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	.btn-outline-success {
+		padding-left: 2rem;
+		padding-right: 2rem;
 	}
 }
 
@@ -149,10 +221,11 @@ a {
 
 @media only screen and (max-width: 768px) {
 	#header-image {
-		height: 40vh;
+		height: 55vh;
 	}
 	#header-text {
-		height: 60%;
+		height: 89%;
+		margin: auto;
 	}
 	#header-text h1 {
 		font-size: 28px;
@@ -182,23 +255,34 @@ a {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+	.btn-shop-1 {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.btn-outline-success {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }
 
 /* Small devices (landscape phones, 576px and up) */
 
 @media only screen and (max-width: 576px) {
 	#header-image {
-		height: 25vh;
+		background-image: url("<?php echo esc_url(get_template_directory_uri()); ?>assets/images/background_image_mobile.svg");
+
+		height: 40vh;
 	}
 	#header-text {
 		height: 60%;
+		margin: auto;
 	}
 	#header-text h1 {
-		font-size: 20px;
+		font-size: 32px;
 	}
 
 	#header-text h4 {
-		font-size: 14px;
+		font-size: 16px;
 	}
 
 	#akwanza-logo {
@@ -214,24 +298,42 @@ a {
 		padding-left: 2px;
 		border: none;
 	}
+
 	.vr {
 		display: none;
 	}
+	#services-card {
+		border-radius: 0;
+	}
+	.p-3 {
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+	}
+	.m-4 {
+		margin-right: 0 !important;
+		margin-left: 0 !important;
+	}
+	.row {
+		--bs-gutter-x: 0 !important;
+	}
 }
 @media (min-width: 300px) and (max-width: 575px) {
+	#header-image {
+		height: 60vh;
+	}
+	#header-text {
+		height: 80%;
+		margin: auto;
+	}
+
 	#header-text h1 {
-		font-size: 20px;
+		font-size: 28px;
 	}
 
 	#header-text h4 {
-		font-size: 12px;
+		font-size: 16px;
 	}
-	#header-text {
-		height: 70%;
-	}
-	#header-image {
-		height: 30vh;
-	}
+
 	#akwanza-logo {
 		font-size: 20px;
 	}
@@ -241,9 +343,29 @@ a {
 	}
 	.btn-shop {
 		align-items: start;
-		padding-right: 5px;
+		padding-right: 7px;
 		padding-left: 2px;
 		border: none;
+	}
+	.btn-shop-1 {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	.btn-outline-success {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	div .section1 .p-3 {
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+	}
+	.row .row-cols-1 .m-4 {
+		margin-right: 0 !important;
+		margin-left: 0 !important;
+	}
+	#services-card {
+		border-radius: 0;
 	}
 	.vr {
 		display: none;
