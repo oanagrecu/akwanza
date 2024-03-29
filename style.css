@@ -163,6 +163,25 @@ a {
 	color: #4b958e;
 	text-decoration: none;
 }
+/* styling section3-Partnerships */
+#partnerships-title {
+	font-size: 54px;
+	font-family: "Colonna MT", serif;
+	font-weight: bolder;
+	color: black;
+}
+#services-card-4 {
+	background-color: #fbecd4;
+}
+#services-card-5 {
+	background-color: #fbecd4;
+}
+.section3 {
+	background-color: #fbecd4;
+}
+#section3-content {
+	background-color: #fbecd4;
+}
 
 /* styling section2 */
 

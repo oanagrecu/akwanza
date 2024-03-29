@@ -17,23 +17,25 @@
         </html>
         <?php include 'content-section1.php'; ?>
         <?php include 'content-section2.php'; ?>
-       
+        <?php include 'content-section3.php'; ?>
+
+
         <?php
-        if (have_posts()):
-            while (have_posts()):
+        if (have_posts()) :
+            while (have_posts()) :
                 the_post();
-                ?>
+        ?>
                 <article <?php post_class(""); ?>>
 
                 </article><!-- #post-## -->
-                <?php
+        <?php
                 // If comments are open or we have at least one comment, load up the comment template.
-                if (comments_open() || get_comments_number()):
+                if (comments_open() || get_comments_number()) :
                     comments_template();
                 endif;
             endwhile;
             the_posts_navigation();
-        else:
+        else :
             get_template_part('content-none');
         endif;
         ?>
