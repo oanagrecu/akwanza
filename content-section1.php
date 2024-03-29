@@ -1,5 +1,5 @@
-<div class="section1 p-2 m-0 border-0 bd-example m-0 border-0">
-    <div class="row row-cols-1 row-cols-md-2 g-4 m-4" id="section1-content">
+<div class="section1 p-2 m-0 border-0 bd-example m-0 border-0 ">
+    <div class="row row-cols-1 row-cols-md-2 g-4 m-4 mb-5" id="section1-content">
         <div class="col">
             <div class="card h-100 text-center" id="services-card">
                 <h1 class="card-title text-center p-3">Online Store</h1>
@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="col">
-            <div class="card h-100 text-center" id="services-card">
+            <div class="card h-100 text-center" id="services-card-1">
                 <h1 class="card-title text-center p-3">Reports</h1>
                 <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/reports.png"
                     alt="hand holding a smartphone" class="mx-auto" width="fit-content" height="300px"
@@ -29,7 +29,7 @@
                         deeper understanding of conservation challenges and opportunities.</p>
                 </div>
                 <div class="text-center mb-4">
-                    <a href="#" class="btn btn-lg btn-outline-success" data-bs-toggle="modal"
+                    <a href="#" class="btn btn-lg btn-outline" data-bs-toggle="modal"
                         data-bs-target="#staticBackdrop">Coming Soon</a>
                     <div class="modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
                         aria-hidden="true">
