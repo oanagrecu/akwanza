@@ -1,8 +1,8 @@
-<section class="py-8" style="background-color: #DEB693">
+<section class="py-4" style="background-color: #DEB693">
     <div>
         <div class="row justify-content-around">
             <div class="col-lg-12 text-center">
-                <H3 class="display-3 fw-bold colonna-mt">Story</H3>
+                <H3 class="display-3 fw-bold colonna-mt py-4">Story</H3>
             </div>
             <div class="col-sm-10 col-lg-5 mb-3 ">
                 <div id="carouselExampleCaptions" class="carousel slide">
