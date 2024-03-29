@@ -18,6 +18,7 @@ Screenshot:screenshot.png
 
 html,
 body {
+	background-color: #fbecd4;
 	height: 100%;
 	margin: 0 !important;
 	padding: 0;
@@ -27,11 +28,6 @@ body {
 * {
 	font-family: Arial, Helvetica, sans-serif;
 }
-
-/* body {
-	margin: 0;
-	padding: 0;
-} */
 
 /* styling the navbar */
 .navbar {
@@ -98,21 +94,40 @@ a {
 /* styling section1 SERVICES*/
 .section1 {
 	background-color: #deb693;
+	padding-bottom: 40px;
 }
 #section1-content {
+	background-color: #deb693;
+}
+#section4-content {
 	background-color: #deb693;
 }
 #services-card {
 	border-radius: 10px;
 	background-color: #fbecd4;
 }
+#services-card-1 {
+	border-radius: 10px;
+	background-color: #fbecd4;
+}
+
 #services-card h1 {
 	font-size: 54px;
 	font-family: "Colonna MT", serif;
 	font-weight: bolder;
 	color: black;
 }
+#services-card-1 h1 {
+	font-size: 54px;
+	font-family: "Colonna MT", serif;
+	font-weight: bolder;
+	color: black;
+}
 #services-card h4 {
+	font-size: 32px;
+	color: black;
+}
+#services-card-1 h4 {
 	font-size: 32px;
 	color: black;
 }
@@ -124,12 +139,17 @@ a {
 	color: white;
 	background-color: #4b958e;
 }
-.btn-outline-success {
+.btn-outline {
 	color: #4b958e;
 	background-color: #fbecd4;
 	border: 3px solid #4b958e;
 }
-.btn-outline-success:hover {
+.btn-outline:hover {
+	color: #fbecd4;
+	background-color: #4b958e;
+	border: 3px solid #4b958e;
+}
+.btn-outline:focus {
 	color: #fbecd4;
 	background-color: #4b958e;
 	border: 3px solid #4b958e;
@@ -163,6 +183,51 @@ a {
 	background-color: #fbecd4;
 }
 
+/* styling section2 */
+
+.section2 {
+	background-color: #fbecd4;
+}
+#section2-content {
+	background-color: #fbecd4;
+}
+#services-card-2 {
+	background-color: #fbecd4;
+}
+#services-card-3 {
+	background-color: #fbecd4;
+}
+
+#services-card-3 h2 {
+	font-size: 54px;
+	font-family: "Colonna MT", serif;
+	font-weight: bolder;
+	color: black;
+}
+#services-card-3 .card-body .card-text {
+	font-size: 24px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	color: black;
+}
+
+#services-card-2 {
+	background-color: #fbecd4;
+}
+#service-card-3 {
+	background-color: #fbecd4;
+}
+/* styling section3 */
+
+/* styling the footer */
+#footer_content {
+	font-size: 28px;
+	width: fit-content;
+	margin: auto;
+	background-color: #fbecd4;
+	color: black;
+}
+
 /* Extra large devices (large desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
 	#header-image {
@@ -192,9 +257,16 @@ a {
 		padding-left: 3rem;
 		padding-right: 3rem;
 	}
-	.btn-outline-success {
+	.btn-outline {
 		padding-left: 3rem;
 		padding-right: 3rem;
+	}
+	#footer_content {
+		font-size: 28px;
+		width: fit-content;
+		margin: auto;
+		background-color: #fbecd4;
+		color: black;
 	}
 }
 
@@ -230,9 +302,16 @@ a {
 		padding-right: 2rem;
 	}
 
-	.btn-outline-success {
+	.btn-outline {
 		padding-left: 2rem;
 		padding-right: 2rem;
+	}
+	#footer_content {
+		font-size: 24px;
+		width: fit-content;
+		margin: auto;
+		background-color: #fbecd4;
+		color: black;
 	}
 }
 
@@ -278,9 +357,14 @@ a {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-	.btn-outline-success {
+	.btn-outline {
 		padding-left: 15px;
 		padding-right: 15px;
+	}
+	#footer_content {
+		font-size: 26px;
+		width: fit-content;
+		margin: auto;
 	}
 }
 
@@ -324,6 +408,9 @@ a {
 	#services-card {
 		border-radius: 0;
 	}
+	#services-card-1 {
+		border-radius: 0;
+	}
 	.p-3 {
 		padding-right: 0 !important;
 		padding-left: 0 !important;
@@ -334,6 +421,11 @@ a {
 	}
 	.row {
 		--bs-gutter-x: 0 !important;
+	}
+	#footer_content {
+		font-size: 28px;
+		width: fit-content;
+		margin: auto;
 	}
 }
 @media (min-width: 300px) and (max-width: 575px) {
@@ -357,8 +449,9 @@ a {
 		font-size: 20px;
 	}
 	#footer_content {
-		font-size: 16px;
+		font-size: 18px;
 		width: fit-content;
+		margin: auto;
 	}
 	.btn-shop {
 		align-items: start;
@@ -370,7 +463,7 @@ a {
 		padding-left: 25px;
 		padding-right: 25px;
 	}
-	.btn-outline-success {
+	.btn-outline {
 		padding-left: 25px;
 		padding-right: 25px;
 	}
@@ -384,6 +477,9 @@ a {
 		margin-left: 0 !important;
 	}
 	#services-card {
+		border-radius: 0;
+	}
+	#services-card-1 {
 		border-radius: 0;
 	}
 	.vr {
