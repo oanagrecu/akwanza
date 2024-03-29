@@ -33,6 +33,38 @@ body {
 	padding: 0;
 } */
 
+.colonna-mt {
+	font-family: "Colonna MT";
+}
+
+/* About page */
+.story-section {
+    height: 500px; /* Adjust the height as needed */
+    overflow-y: auto;
+    padding: 30px;
+    background-color: #FBECD4; /* Your existing background color */
+    border-radius: 15px;
+}
+
+.story-img {
+	margin-bottom: 1rem;
+}
+.carousel-indicators [data-bs-target] {
+	background-color: #FBECD4;
+}
+.carousel-caption {
+	background: rgba(0, 0, 0, 0.6);
+	border-radius: 0.5rem;
+}
+
+.h-500 {
+	height: 500px;
+}
+
+.w-inherit {
+	width: inherit !important;
+}
+
 /* styling the navbar */
 .navbar {
 	width: 100%;
