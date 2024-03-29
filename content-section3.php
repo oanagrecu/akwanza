@@ -1,15 +1,24 @@
-<div class="container mb-4">
-    <div class="row d-flex flex-row flex-wrap-reverse gx-5 ">
-        <div class="col-sm-6">
-            <h2 class="text-md-end text-sm-end text-center text-nowrap">AKWANZA Products</h2>
-            <p class="text-md-end text-sm-center text-center object-fit-content">All profits go to the Big Life
-                Foundation</p>
-            <div class="text-md-end text-sm-end text-center">
-                <a href="https://akwanza.teemill.com/" class="btn btn-dark btn-lg">Buy Now</a>
+<div class="section3 p-1 m-0 border-0 m-0 border-0 mb-4">
+
+    <h2 class="text-center mx-auto" id="partnerships-title">Partnerships</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-2 m-2" id="section3-content">
+
+        <div class="col">
+            <div class="card border border-0 h-60 text-center" id="services-card-4">
+                <div class="card-body">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/Teemill1.png" alt="hand holding a smartphone" style="background-color:#fbecd4">
+                </div>
             </div>
         </div>
-        <!-- <div class="col-sm-6 text-md-start text-center py-2"> -->
-        <!-- <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/akwanza-t-shirt.png" class="img-fluid object-fit-contain text-center" alt="T-shirt Image">   -->
-        <!-- </div> -->
+        <div class="col">
+            <div class="card border border-0 h-60 text-center" id="services-card-5">
+                <div class="card-body">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/BigLifeLogo.png" alt="hand holding a smartphone" style="background-color:#fbecd4">
+                </div>
+            </div>
+        </div>
+
+
+
     </div>
 </div>
