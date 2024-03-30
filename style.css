@@ -40,10 +40,10 @@ body {
 
 /* About page */
 .story-section {
-	height: 500px; /* Adjust the height as needed */
+	height: 500px;
 	overflow-y: auto;
 	padding: 30px;
-	background-color: #fbecd4; /* Your existing background color */
+	background-color: #fbecd4;
 	border-radius: 15px;
 }
 
@@ -250,10 +250,14 @@ a {
 	padding: 30px;
 	background-color: #fbecd4;
 }
-/* #services-card-3 .card-body {
-	
-}  */
+
 /* styling section3-Partnerships */
+.section3 {
+	background-color: #fbecd4;
+}
+#section3-content {
+	background-color: #fbecd4;
+}
 #partnerships-title {
 	font-size: 54px;
 	font-family: "Colonna MT", serif;
@@ -264,12 +268,6 @@ a {
 	background-color: #fbecd4;
 }
 #services-card-5 {
-	background-color: #fbecd4;
-}
-.section3 {
-	background-color: #fbecd4;
-}
-#section3-content {
 	background-color: #fbecd4;
 }
 
@@ -380,6 +378,14 @@ a {
 		background-color: #fbecd4;
 		color: black;
 	}
+	#services-card-4 .card-body .card {
+		--bs-card-spacer-y: 0 !important;
+		--bs-card-spacer-x: 0 !important;
+	}
+	#services-card-5 .card-body .card {
+		--bs-card-spacer-y: 0 !important;
+		--bs-card-spacer-x: 0 !important;
+	}
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -448,6 +454,42 @@ a {
 		padding: 10px;
 		margin-bottom: 0;
 	}
+	#service-card-4 .card-body {
+		margin: 15px auto;
+		padding: 0;
+		overflow-y: auto;
+		height: 400px;
+		margin-bottom: 50px;
+	}
+	#service-card-5 .card-body {
+		margin: 15px auto;
+		padding: 0;
+		overflow-y: auto;
+		height: 400px;
+		margin-bottom: 50px;
+	}
+	#services-card-4 .card-body img {
+		height: auto;
+		width: 300px;
+	}
+	#service-card-5 {
+		overflow-y: auto;
+		height: 400px;
+		margin-bottom: 50px;
+	}
+
+	#services-card-5 .card-body img {
+		max-width: fit-content;
+		width: 300px;
+	}
+	#services-card-4 .card-body .card {
+		--bs-card-spacer-y: 0 !important;
+		--bs-card-spacer-x: 0 !important;
+	}
+	#services-card-5 .card-body .card {
+		--bs-card-spacer-y: 0 !important;
+		--bs-card-spacer-x: 0 !important;
+	}
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -455,7 +497,6 @@ a {
 @media only screen and (max-width: 576px) {
 	#header-image {
 		background-image: url("<?php echo esc_url(get_template_directory_uri()); ?>assets/images/background_image_mobile.svg");
-
 		height: 40vh;
 	}
 	#header-text {
@@ -511,6 +552,14 @@ a {
 		font-family: "Colonna MT", serif;
 		font-weight: bolder;
 		color: black;
+	}
+	#service-card-4 img {
+		width: 200px;
+		height: 100px;
+	}
+	#services-card-5 img {
+		width: 200px;
+		height: auto;
 	}
 }
 @media (min-width: 300px) and (max-width: 575px) {
@@ -601,6 +650,14 @@ a {
 	}
 	.section2 {
 		background-color: #deb693;
+	}
+	#services-card-4 .card-body img {
+		height: auto;
+		width: 250px;
+	}
+	#services-card-5 .card-body img {
+		height: auto;
+		width: 250px;
 	}
 }
 /* styling d3.charts
