@@ -139,6 +139,7 @@ a {
 }
 #section1-content {
 	background-color: #deb693;
+	margin-bottom: 60px;
 }
 #section4-content {
 	background-color: #deb693;
@@ -250,7 +251,24 @@ a {
 	padding: 30px;
 	background-color: #fbecd4;
 }
-
+.section1 {
+	position: relative;
+}
+.svg-border {
+	position: absolute;
+	display: block;
+	bottom: -80px;
+	left: 0;
+	width: 100%;
+	height: 150px;
+	pointer-events: none;
+}
+.svg-mobile {
+	display: none;
+}
+.section1 .section1-content {
+	margin-bottom: 100px;
+}
 /* styling section3-Partnerships */
 .section3 {
 	background-color: #fbecd4;
@@ -553,13 +571,26 @@ a {
 		font-weight: bolder;
 		color: black;
 	}
-	#service-card-4 img {
-		width: 200px;
-		height: 100px;
+	.svg-desktop {
+		display: none;
 	}
-	#services-card-5 img {
-		width: 200px;
-		height: auto;
+	.svg-border {
+		position: absolute;
+		display: none;
+		bottom: -67px;
+		left: 0;
+		width: 100%;
+		height: 100px;
+		pointer-events: none;
+	}
+	.svg-mobile {
+		display: block;
+		position: absolute;
+		width: 552px;
+		height: 100px;
+		bottom: -68px;
+		left: -67px;
+		pointer-events: none;
 	}
 }
 @media (min-width: 300px) and (max-width: 575px) {
@@ -648,8 +679,25 @@ a {
 		padding: 10px;
 		margin-bottom: 0;
 	}
-	.section2 {
+	/* .section2 {
 		background-color: #deb693;
+	} */
+	.svg-desktop {
+		display: none;
+	}
+	.svg-border {
+		position: absolute;
+		display: none;
+		bottom: -67px;
+		pointer-events: none;
+	}
+	.svg-mobile {
+		display: block;
+		position: absolute;
+		width: 569px;
+		height: 144px;
+		left: -72px;
+		pointer-events: none;
 	}
 	#services-card-4 .card-body img {
 		height: auto;
