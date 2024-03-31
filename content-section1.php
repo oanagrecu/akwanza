@@ -1,4 +1,4 @@
-<div class="section1 p-2 m-0 border-0 bd-example m-0 border-0 ">
+<div class="section1 p-2 m-0 border-0 bd-example m-0 border-0">
     <div class="row row-cols-1 row-cols-md-2 g-4 m-4 mb-5" id="section1-content">
         <div class="col">
             <div class="card h-100 text-center" id="services-card">
@@ -65,4 +65,13 @@
             </div>
         </div>
     </div>
+    <svg class="svg-border svg-desktop text-center mx-auto" width="2400" height="180" viewBox="0 0 2400 180" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="1200" cy="100" rx="1600" ry="100" fill="#FBECD4" />
+    </svg>
+    <svg class="svg-border svg-mobile text-center mx-auto" width="538" height="110" viewBox="0 0 538 110" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 220C0 98.4974 98.4974 0 220 0H326C447.503 0 538 98.4974 538 220V353H0V220Z" fill="#FBECD4" />
+    </svg>
+
 </div>

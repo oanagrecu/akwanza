@@ -1,4 +1,5 @@
-<div class="section2 p-2 border-0 mb-4">
+<div class="section2 p-2 border-0 mb-4 mt-4">
+
     <h1 class="card-title text-center mx-auto mt-3" id="section2-title">Mission</h1>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-3" id="section2-content">
         <div class="col-md-6">
