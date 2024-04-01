@@ -53,3 +53,5 @@ Common errors [page](errors.md).
 ### License
 
 This project is UNLICENSED.
+
+© All Rights Reserved.
